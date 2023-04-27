@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <form method="post">
+        <label for="a">Podaj celcjusze</label>
+        <input type="number" id="a">
+        <br>
+        
+       
+        
+        <button onclick="oblicz()">OBLICZ</button>
+    </form>
+    <script>
+        function oblicz()
+        {
+            let a=Number(document.getElementById("a").value);
+            
+            let wynik1 = (a * 9 / 5) + 32;
+            let wynik2 = a + 273.15;
+            document.write("Celcjusze: " + a + "<br> Farenhaity: " + wynik1 + "<br> Keliwny: " + wynik2);
+        }
+    </script>
+</body>
+</html>
